@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>clothes and woman</title>
+  <link rel="stylesheet" href="../../common/css/style.css"/>
+  <link rel="stylesheet" href="style.css"/>
+<script src="main.js" defer></script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+
+#header{
+    position:relative;
+    background:#f3eded;
+    height:250px;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    text-align:center;
+}
+
+#menu1{
+    background-position:fixed;
+    background:#eedcdc;
+}
+
+#menu1 a{
+    color:#8a52d8af;
+    text-decoration:none;
+    letter-spacing:2px;
+    font-weight:normal;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#menu1 ul{
+    float:right;
+    letter-spacing:5px;
+}
+
+#menu1 li{
+    display:inline;
+}
+
+#search1 input[type="text"]{
+    padding: 5px 20px 20px 50px;
+	width: 100px;
+	height: 5px;
+	border: 2px solid #b7ecf3;
+    font-size:20px;
+    border-radius:20px 0 0 20px;
+    border-right:none;
+    background-color:#d1f9fc8e;
+    outline:none;
+}
+
+#search1 input[type="submit"]{
+    position:relative;
+    margin:0;
+	border: none;
+	padding:0 30px 20px 20px;
+	height: 34px;
+	border-radius:0 10px 10px 0;
+	font-size: 12px;
+	background: #b6f4f5dc;
+	color: #fff;
+	vertical-align: bottom;
+    font-size:25px;
+    text-align:center;
+    background:#B2CCFF url(image/heart1.png)center no-repeat;
+}
+
+#searcg1 input[type="text"]:hover{
+    margin-top:30px;
+    background:#91dcff;
+}
+
+img1{
+    display:inline;
+
+}
+
+#menu2{
+    border-top:1px solid #fff;
+    margin-top:-70px;
+    background:#18c2ab;
+    border-bottom:1px solid #ffffff;
+    padding:30px 30px;
+    height:30px;
+    position:relative;
+}
+
+#menu2 a{
+    text-decoration:none;
+    color:#fff;
+    margin-top:20px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#menu2 li{
+    border-left:#000000;
+    display:inline;
+    padding:20px 20px;
+}
+
+
+#Overall{
+    padding:20px 20px;
+    background:#6464FF;
+}
+
+#search1{
+    position:absolute;
+    top:255px;
+    right:40px;
+}
+
+.galleryWrap img{
+    position:relative;
+    margin:0 auto;
+}
+
+.galleryWrap .tap1-1{
+    position:absolute; 
+    top:30px;
+    left:38%;
+    z-index:1;
+}
+
+.tap1-1{
+    transform:translateX(1150px);
+    background-attachment:fixed;
+}
+
+#menu2 .tap1-1{
+    display:none;
+    opacity:0.9;
+}
+
+#menu2 .tap1 > li:hover >.tap1-1{
+    display:block;
+    padding:5px 5px;
+    width:820px;
+    height:250px;
+    background:#41dddd;
+    font-size:25px;
+    color:#f7e5e5;
+    margin-top:10px;
+    border:1px solid #B2CCFF;
+    font-weight:bold;
+    background-attachment:fixed;
+}
+
+.font-letter1{
+    margin-left:5px;
+    letter-spacing:12px;
+    font-size:25px;
+    color:#cdcdf3;
+}
+
+.font-letter2{
+    margin-left:11px;
+    letter-spacing:25px;
+    font-size:20px;
+    justify-content:space-between;
+    color:#6464FF;
+}
+
+#menu2 .tap1-2{
+    display:none;
+}
+
+.tap1-2{
+    transform:translateX(30px);
+}
+
+#mainpage{
+    position:relative;
+    margin-top:30px;
+}
+
+.img-letter img{
+    border:5px solid #ebebf5;
+    margin-left:40px;
+    position:relative;
+}
+
+#mainpage a:hover img{
+    transition:opacity 0.5s linear;
+    opacity:0.5;
+}
+
+#mainpage{
+    position:relative;
+    background:#e2f6ff;
+    margin-top:30px;
+}
+
+#main p{
+    font-size:30px;
+    color:#75b1ff;
+}
+
+#img1{
+    width:100px;
+}
+
+#footer{
+    background:rgb(247, 231, 231);
+    float:center;
+    padding:30px 30px;
+}
+
+#footer p{
+    margin-top:5px;
+    color:#814646;
+}
+
+#slide02 ul{
+    display:block;
+}
+
+#join{
+    text-align:center;
+    background-attachment:fixed;
+    width:1000px;
+    height:2000px;
+    
+    
+}
+
+#join li{
+    text-align:center;
+    display:inline;
+    position:absolute;
+    top:40px;
+    left:300px;
+}
+
+.join-img1{
+    margin:300px 100px 30px 30px;
+}
+
+.font-margin1{
+    margin:4px 100px 30px 30px;
+}
+.join-img2{
+    margin:300px 100px 30px 500px;
+}
+
+.font-margin2{
+    margin:4px 90px 60px 455px;
+}
+
+.join-img3{
+    margin:300px 100px 30px 1000px;
+}
+
+.font-margin3{
+    margin:4px 90px 60px 1000px;
+}
+
+#join iframe{
+    position:absolute;
+    top:600px;
+    margin-left:40px;
+}
+
+#join input[type="radio"]{
+    position:absolute;
+    top:1200px;
+}
+
+#join label{
+    top:2000px;
+    
+}
+
+.submit1{
+    position:absolute;
+    top:20px;
+    margin-top:1100px;
+    margin-left:550px;
+}
+
+#join2{
+    position:absolute;
+    top:600px;
+    margin-left:500px;
+}
+
+.submit2{
+    position:absolute;
+    top:10px;
+    margin-top:1710px;
+    margin-left:550px;
+}
+
+.submit3{
+    position:absolute;
+    top:1000px;
+    margin-top:800px;
+    margin-left:550px;
+}
+
+#submit1-1{
+    width:70px;
+    height:50px;
+    background:#18c2ab;
+    color:#fff;
+    border:none;
+    border-radius:10px 10px;
+}
+input[type="radio"]{
+    display:none;
+}
+
+
+label {
+    position:relative;
+    cursor:pointer;
+    font-weight:bold;
+    padding-right:100px;
+}
+
+label::before{
+    content:'';
+    border:3px solid #cecece;
+    display:inline-block;
+    width:30px;
+    height:30px;
+    margin:-13px 24px;
+    margin-right:-50px;
+    border-radius:50%;
+}
+
+label::after{
+    content:'';
+    display:inline-block;
+    position:absolute;
+    width:32px;
+    height:32px;
+    left:7px;
+    top:7px;
+    margin:-5px 5px;
+    margin-left:19px;
+}
+
+input[type="radio"]:checked + label::after{
+    content:'';
+    background:url("image/checkbox1.png");
+}
+</style>
+</head>
+<html>
+<body>
+<div id="header">
+<div id="menu1">
+<ul>
+<li><a href="index7.html">로그인</a></li>
+<li><a href="index2.html">회원가입</a></li>
+<li><a href="#">공지사항</a></li>
+<li><a href="#">마이페이지</a></li>
+<li><a href="#">장바구니</a></li>
+</ul>
+</div>
+<div class="logo">
+<a href="index.html"><img src="image/logo.png"></a>
+</div>
+<div id="menu2">
+<ul class="tap1">
+    <li><a href="#">원피스</a></li>
+    <li><a href="#">아우터</a></li>
+    <li><a href="#">스커트</a></li>
+    <li><a href="#">팬츠</a></li>
+    <li><a href="#">언더웨어</a></li>
+    <li><a href="#">전체화면</a></li>
+</ul>
+</div>
+</div>
+
+    <div id="join">
+    <ul>
+    <li><img src="image/free-icon-flower-shop.png" class="join-img1"></a><p class="font-margin1">이용 약관 동의</p></li>
+    <li><img src="image/free-icon-pencil.png" class="join-img2"><p class="font-margin2">회원 정보 입력</p></li>
+    <li><img src="image/free-icon-address-book.png" class="join-img3"><p class="font-margin3">회원 가입 완료</p></li>
+    <iframe src="index3.html" width=700 height=500></iframe>
+    <div id="join2">
+    <iframe src="index4.html" width=700 height=500></iframe>
+    </div>
+    </ul>
+    </div>
+    <div class="submit1">
+    <input type="radio" name="radio1" id="radio1">동의함
+    <label for="radio1"></label></input>
+    <input type="radio" name="radio1" id="radio2">동의하지 않음
+    <label for="radio2"></label></input>
+    
+    </div>
+    <div class="submit2">
+    <input type="radio" name="radio2" id="radio3">동의함</input>
+    <label for="radio3"></label>
+    <input type="radio" name="radio2" id="radio4">동의하지 않음</input>
+    <label for="radio4"></label>
+    </div>
+    <div class="submit3">
+    <a href=""><input type="submit" name="submit" id="submit1-1" value="확인" checked></a>
+    </div>
+     
+
+<div id="footer">
+<p>(주)옷과 여자
+<p>대표:엄혜빈 주소:서울시 관악구 신림동</p>
+<p>쇼핑몰/브랜드 제휴 문의:shop@clothes and woman</p>
+<p>고객문의:shop@clothes and woman/(09:00~18:00) 전화번호:010-0000-0000</p>
+<p>사업자 등록번호:000-00-0000 통신판매업 신고번호:0000-0000-00000</p>
+</div>
+
+</body>
+</html>
