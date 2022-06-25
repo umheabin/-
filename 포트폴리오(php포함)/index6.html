@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>clothes and woman</title>
+<script src="js/main.js" defer></script>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+
+
+
+#header{
+    background:#f3eded;
+    height:250px;
+    text-align:center;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+
+#menu1{
+    background-position:fixed;
+    background:#eedcdc;
+}
+
+#menu1 a{
+    color:#8a52d8af;
+    text-decoration:none;
+    letter-spacing:2px;
+    font-weight:normal;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#menu1 ul{
+    float:right;
+    letter-spacing:5px;
+}
+
+#menu1 li{
+    display:inline;
+}
+
+#search1 input[type="text"]{
+    padding: 5px 20px 20px 50px;
+	width: 100px;
+	height: 5px;
+	border: 2px solid #b7ecf3;
+    font-size:20px;
+    border-radius:20px 0 0 20px;
+    border-right:none;
+    background-color:#d1f9fc8e;
+    outline:none;
+}
+
+#search1 input[type="submit"]{
+    position:relative;
+    margin:0;
+	border: none;
+	padding:0 30px 20px 20px;
+	height: 34px;
+	border-radius:0 10px 10px 0;
+	font-size: 12px;
+	background: #b6f4f5dc;
+	color: #fff;
+	vertical-align: bottom;
+    font-size:25px;
+    text-align:center;
+    background:#B2CCFF url(image/heart1.png)center no-repeat;
+}
+
+#searcg1 input[type="text"]:hover{
+    margin-top:30px;
+    background:#91dcff;
+}
+
+img1{
+    display:inline;
+
+}
+
+#menu2{
+    border-top:1px solid #fff;
+    margin-top:-70px;
+    background:#18c2ab;
+    border-bottom:1px solid #ffffff;
+    padding:30px 30px;
+    height:30px;
+    position:relative;
+}
+
+#menu2 a{
+    text-decoration:none;
+    color:#fff;
+    margin-top:20px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#menu2 li{
+    border-left:#000000;
+    display:inline;
+    padding:20px 20px;
+}
+
+
+#Overall{
+    padding:20px 20px;
+    background:#6464FF;
+}
+
+#search1{
+    position:absolute;
+    top:255px;
+    right:40px;
+}
+
+.galleryWrap img{
+    position:relative;
+    margin:0 auto;
+}
+
+.galleryWrap .tap1-1{
+    position:absolute; 
+    top:30px;
+    left:38%;
+    z-index:1;
+}
+
+.tap1-1{
+    transform:translateX(1150px);
+    background-attachment:fixed;
+}
+
+#menu2 .tap1-1{
+    display:none;
+    opacity:0.9;
+}
+
+#menu2 .tap1 > li:hover >.tap1-1{
+    display:block;
+    padding:5px 5px;
+    width:820px;
+    height:250px;
+    background:#41dddd;
+    font-size:25px;
+    color:#f7e5e5;
+    margin-top:10px;
+    border:1px solid #B2CCFF;
+    font-weight:bold;
+    background-attachment:fixed;
+}
+
+.font-letter1{
+    margin-left:5px;
+    letter-spacing:12px;
+    font-size:25px;
+    color:#cdcdf3;
+}
+
+.font-letter2{
+    margin-left:11px;
+    letter-spacing:25px;
+    font-size:20px;
+    justify-content:space-between;
+    color:#6464FF;
+}
+
+#menu2 .tap1-2{
+    display:none;
+}
+
+.tap1-2{
+    transform:translateX(30px);
+}
+
+#mainpage{
+    position:relative;
+    margin-top:30px;
+}
+
+.img-letter img{
+    border:5px solid #ebebf5;
+    margin-left:40px;
+    position:relative;
+}
+
+#mainpage a:hover img{
+    transition:opacity 0.5s linear;
+    opacity:0.5;
+}
+
+#mainpage{
+    position:relative;
+    background:#e2f6ff;
+    margin-top:30px;
+}
+
+#main p{
+    font-size:30px;
+    color:#75b1ff;
+}
+
+#img1{
+    width:100px;
+}
+
+#footer{
+    background:rgb(247, 231, 231);
+    text-align:center;
+    padding:30px 30px;
+}
+
+#footer p{
+    margin-top:5px;
+    color:#814646;
+}
+
+#slide02 ul{
+    display:block;
+}
+
+
+
+#join li{
+    text-align:center;
+    display:inline;
+    position:absolute;
+    top:40px;
+    left:300px;
+}
+
+.join-img1{
+    margin:300px 100px 30px 30px;
+}
+
+.font-margin1{
+    margin:4px 100px 30px 30px;
+}
+.join-img2{
+    margin:300px 100px 30px 500px;
+}
+
+.font-margin2{
+    margin:4px 90px 60px 455px;
+}
+
+.join-img3{
+    margin:300px 100px 30px 1000px;
+}
+
+.font-margin3{
+    margin:4px 90px 60px 1000px;
+}
+
+input[type="radio"]
+{
+    display:none;
+}
+
+input[type="radio"] + label{
+    padding:5px 5px;
+    display:inline-block;
+    width:100px;
+    font-size:14px;
+    cursor:pointer;
+}
+
+.conbox{
+    display:none;
+    border-radius:50%;
+}
+
+input[id="tab01"]:checked ~.box1{
+    display:block;
+}
+
+input[id="tab02"]:checked ~.box2{
+    display:block;
+}
+
+input[id="tab03"]:checked ~.box3{
+    display:block;
+}
+
+input[id="tab04"]:checked ~.box4{
+    display:block;
+}
+
+input[id="tab05"]:checked ~.box5{
+    display:block;
+}
+
+.product{
+    margin:0 auto;
+    position:relative;
+    width:1200px;
+    height:1700px;
+    margin-top:300px;
+    margin-left:200px;
+}
+
+.registered{
+    margin:0 auto;
+    position:absolute;
+    width:700px;
+    margin-left:1100px;
+    top:550px;
+    color:#000;
+    justify-content:center;
+}
+
+.tab_content img{
+    border-radius:10%;
+}
+
+#coupon1{
+    background:#B2CCFF;
+    color:#4281ff;
+    font-size:15px;
+    border:none;
+    padding:5px 5px;
+}
+
+#coupon1:hover{
+    background:#6b9af7;
+    color:#fff;
+    transition:0.3s;
+
+}
+
+.apply{
+    font-size:17px;
+    color:red;
+}
+
+.Benefits input[type="submit"]{
+    padding:5px 15px;
+    border-radius:10%;
+    border:none;
+    color:#ff0000;
+}
+
+.delivery{
+    margin-top:10px;
+    background:#000;
+    color:#fbff04;
+}
+
+.reg title{
+    font-weight:bold;
+    color:#000;
+    font-size:35px;
+}
+
+.reg price{
+    font-weight:bold;
+    font-size:35px;
+}
+
+.realtime input[type="submit"]{
+    margin-top:10px;
+    margin-left:110px;
+    background:#53ffe2;
+    padding:5px 100px;
+    font-size:15px;
+    color:#000;
+    border:none;
+}
+
+#color box{
+    display:inline;
+}
+
+
+
+.red{
+    position:relative;
+    background:red;
+    top:2px;
+    left:100px;
+    width:40px;
+    height:40px;
+    margin-left:-100px;
+}
+
+.blue{
+    position:absolute;
+    background:blue;
+    top:5px;
+    left:50px;
+    margin-top:348px;
+    width:40px;
+    height:40px;
+}
+
+.black{
+    position:absolute;
+    background:black;
+    top:5px;
+    left:100px;
+    margin-top:348px;
+    width:40px;
+    height:40px;
+}
+
+.pink{
+    position:absolute;
+    background:pink;
+    top:5px;
+    left:150px;
+    margin-top:348px;
+    width:40px;
+    height:40px;
+}
+
+.yellow{
+    position:absolute;
+    background:yellow;
+    top:4px;
+    left:200px;
+    margin-top:348px;
+    width:40px;
+    height:40px;
+}
+
+.size{
+    margin-top:30px;
+}
+
+.size li{
+    position:relative;
+    list-style:none;
+}
+
+.free{
+    position:relative;
+    top:23px;
+    left:5px;
+    width:110px;
+    height:30px;
+    color:#6493f1;
+    padding:3px 3px;
+    border:2px solid #cecece;
+    text-align:center;
+    font-size:15px;
+    margin-top:-3px;
+}
+
+.long{
+    position:absolute;
+    top:600px;
+    left:140px;
+    width:210px;
+    height:30px;
+    color:#6493f1;
+    padding:3px 3px;
+    border:2px solid #cecece;
+    text-align:center;
+    font-size:15px;
+    margin-top:-110px;
+}
+
+.long8{
+    position:absolute;
+    top:600px;
+    left:380px;
+    width:210px;
+    height:30px;
+    color:#6493f1;
+    padding:3px 3px;
+    border:2px solid #cecece;
+    text-align:center;
+    font-size:15px;
+    margin-top:-110px;
+}
+
+.long12{
+    position:absolute;
+    top:650px;
+    left:5px;
+    width:210px;
+    height:30px;
+    color:#6493f1;
+    padding:2px 2px;
+    border:2px solid #cecece;
+    text-align:center;
+    font-size:15px;
+    margin-top:-100px;
+}
+
+.necessary{
+    margin-top:100px;
+    color:#b3b3b3;
+    font-size:5px;
+}
+
+
+.option{
+    padding:30px 30px;
+    border:1px solid #cecece;
+    font-size:5px;
+    color:#cecece;
+    width:400px;
+    margin-top:20px;
+
+}
+
+.totalprice{
+    margin-top:30px;
+    position:relative;
+    color:#00832c;
+    font-size:20px;
+}
+
+.price1{
+    position:absolute;
+    top:850px;
+    left:400px;
+    color:#00832c;
+    font-size:20px;
+    margin-bottom:-500px;
+}
+
+.shoppingbasket{
+    margin-top:30px;
+    margin-left:50px;
+    padding:5px 5px;
+    border-radius:10px 10px;
+    text-align:center;
+    background:#000000;
+    width:500px;
+    color:#fff;
+}
+
+.purchase{
+    position:absolute;
+    left:8px;
+    width:220px;
+    height:30px;
+    background:#cecece;
+    padding:5px 5px;
+    margin-top:20px;
+    margin-left:50px;
+    text-align:center;
+}
+
+.love{
+    position:absolute;
+    left:8px;
+    width:220px;
+    height:30px;
+    background:#cecece;
+    padding:5px 5px;
+    margin-top:20px;
+    margin-left:300px;
+    text-align:center;
+
+}
+
+.tab1{
+    position:absolute;
+    top:30px;
+    margin-top:1600px;
+    text-align:center;
+    margin-left:200px;
+}
+
+.tab1 input[type="radio"] + label { 
+    padding:30px 100px;
+    display:inline-block;
+    background:rgb(253, 216, 216); 
+    color:#999; 
+    font-size:14px; 
+    cursor:pointer; 
+}
+
+.tab1 input[type="radio"]:checked + label{
+    background:rgb(219, 254, 255);
+}
+
+.tabmenu
+{
+    display:none;
+}
+
+input[id="tab06"]:checked ~.box6{display:block;}
+input[id="tab07"]:checked ~.box7{display:block;}
+input[id="tab08"]:checked ~.box8{display:block;}
+input[id="tab09"]:checked ~.box9{display:block;}
+input[id="tab10"]:checked ~.box10{display:block;}
+
+.box7 img{
+    position:absolute;
+    top:100px;
+    left:5px;
+    width:300px;
+    height:300px;
+}
+
+.redskirt{
+    position:absolute;
+    top:430px;
+    left:5px;
+    width:100px;
+    height:100px;
+}
+
+
+
+.price2{
+    position:absolute;
+    top:470px;
+    left:5px;
+    width:100px;
+    height:100px;
+}
+
+
+
+
+
+
+
+
+#sort{
+    float:center;
+    display:block;
+    margin:0 auto;
+    width:2000px;
+}
+
+#size1{
+    width:300px;
+    margin-bottom:100px;
+    position:relative;
+    top:600px;
+}
+
+#box {
+    margin-top:50px;
+}
+
+.red1 {
+    font-weight:bold;
+    display:none;
+}
+
+#sort2 {
+    left:1000px;
+    width:1000px;
+}
+
+.left1 {
+    text-align:left;
+}
+
+.footer{
+    text-align:center;
+}
+</style>
+</head>
+<html>
+<body>
+<div id="header">
+<div id="menu1">
+<ul>
+<li><a href="index7.html">로그인</a></li>
+<li><a href="index2.html">회원가입</a></li>
+<li><a href="#">공지사항</a></li>
+<li><a href="#">마이페이지</a></li>
+<li><a href="#">장바구니</a></li>
+</ul>
+</div>
+<div class="logo">
+<a href="index.html"><img src="image/logo.png"></a>
+</div>
+<div id="menu2">
+<ul class="tap1">
+    <li><a href="#">원피스</a></li>
+    <li><a href="#">아우터</a></li>
+    <li><a href="#">스커트</a></li>
+    <li><a href="#">팬츠</a></li>
+    <li><a href="#">언더웨어</a></li>
+    <li><a href="#">전체화면</a></li>
+</ul>
+</div>
+</div>
+
+<div id="sort">
+<div id="text1">
+<div class="product">
+<div class="tab_content">
+<input type="radio" name="tabmenu" id="tab01" checked>
+<label for="tab01"><img src="image/jin.jpg" width=115" height="80"></label>
+<input type="radio" name="tabmenu" id="tab02">
+<label for="tab02"><img src="image/jin2.jpg" width="115" height="80"></label>
+<input type="radio" name="tabmenu" id="tab03">
+<label for="tab03"><img src="image/jin3.jpg" width="115" height="80"></label>
+<input type="radio" name="tabmenu" id="tab04">
+<label for="tab04"><img src="image/jin4.jpg" width="115" height="80"></label>
+<input type="radio" name="tabmenu" id="tab05">
+<label for="tab05"><img src="image/jin5.jpg" width="115" height="80"></label>
+
+<div class="conbox box1"><img src="image/jin.jpg" width="590" height="500"></div>
+<div class="conbox box2"><img src="image/jin2.jpg" width="590" height="500"></div>
+<div class="conbox box3"><img src="image/jin3.jpg" width="590" height="500"></div>
+<div class="conbox box4"><img src="image/jin4.jpg" width="590" height="500"></div>
+<div class="conbox box5"><img src="image/jin5.jpg" width="590" height="500"></div>
+
+</div>
+</div>
+
+
+<div class="registered">
+<div class="reg title">[clothes and woman]청바지</div>
+<div class="reg price">45,180원</div>
+<br/>
+<div class="sale button">할인쿠폰
+<input type="submit" value="10% 쿠폰받기" id="coupon1">
+</div>
+<div class="Sale Price">판매가격 50,200원</div>
+쿠폰적용가 45,180원<div class="apply">10%(-5,020원)할인</div>
+
+
+<div class="Benefits">혜택
+<input type="submit" value="구매혜택">
+<input type="submit" value="무이자 할부">
+<input type="submit" value="적립금 지급안내">
+</br/>
+</div>
+<div class="delivery">배송정보
+월요일 07/12 [월] 도착 일요일 오후 8시 이전 주문시</div>
+<div class="realtime">
+<input type="submit" value="실시간 옵션별 배송정보">
+</div>
+</br/>
+<div class="color">색상
+<div class="red"><div class="red1">빨강</div></div>
+<div class="blue"><div class="blue1">블루</div></div>
+<div class="black"><div class="black1">블랙</div></div>
+<div class="pink"><div class="pink1">핑크</div></div>
+<div class="yellow"><div class="yellow1">옐로우</div></div>
+</div>
+
+<div id="box">
+<ul class="size">사이즈
+<div class="free">Free(미니)</div>
+<div class="long">L(미니) + 4,000</div>
+<div class="long8">Free(롱) + 8,000</div>
+<div class="long12">Free(롱) + 12,000</div>
+</ul>
+</div>
+<div class="necessary">[필수]옵션을 선택해주세요.</div>
+<div class="option">위 옵션 박스를 선택하시면 아래에 상품이 추가됩니다.</div>
+<div class="totalprice">총 금액</div>  <div class="price1">0원</div>
+<div class="shoppingbasket">장바구니</div>
+<div class="purchase">구매하기</div>
+<div class="love">좋아요(0)</div>
+
+</div>
+
+<div class="tab1">
+    <input type="radio" name="tabmenu1" id="tab06" checked>
+    <label for="tab06">상품정보</label>
+    <input type="radio" name="tabmenu1" id="tab07">
+    <label for="tab07">관련상품</label>
+    <input type="radio" name="tabmenu1" id="tab08">
+    <label for="tab08">구매후기</label>
+    <input type="radio" name="tabmenu1" id="tab09">
+    <label for="tab09">상품문의</label>
+    <input type="radio" name="tabmenu1" id="tab10">
+    <label for="tab10">쇼핑가이드</label>
+
+
+    <div class="tabmenu box6">1</div>
+    <div class="tabmenu box7">
+    <a href="#"><img src="image/skirt1.jpg"></a>
+    <p class="redskirt">붉은치마</p>
+    <p class="price2">33,000원</p>
+    </div>
+    <div class="tabmenu box8">3</div>
+    <div class="tabmenu box9">4</div>
+    <div class="tabmenu box10">5</div>
+
+    <div id="scrolltop">
+      <img src="image/top arrow1.jpg">
+    </div>
+    <div id="scrollbottom">
+      <img src="image/bottom arrow1.jpg">
+    </div>
+
+</div>
+
+</div>
+</div>
+</div>
+<div id="footer">
+<p>(주)옷과 여자
+<p>대표:엄혜빈 주소:서울시 관악구 신림동</p>
+<p>쇼핑몰/브랜드 제휴 문의:shop@clothes and woman</p>
+<p>고객문의:shop@clothes and woman/(09:00~18:00) 전화번호:010-0000-0000</p>
+<p>사업자 등록번호:000-00-0000 통신판매업 신고번호:0000-0000-00000</p>
+</div>
+
+
+</body>
+</html>
