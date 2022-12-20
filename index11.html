@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>clothes and woman</title>
+  <link rel="stylesheet" href="../../common/css/style.css"/>
+  <link rel="stylesheet" href="style.css"/>
+<script src="js/main.js" defer></script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+
+body{
+    float:center;
+}
+
+#header{
+    background:#f3eded;
+    height:250px;
+    text-align:center;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+
+#menu1{
+    background-position:fixed;
+    background:#eedcdc;
+}
+
+#menu1 a{
+    color:#8a52d8af;
+    text-decoration:none;
+    letter-spacing:2px;
+    font-weight:normal;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#menu1 ul{
+    float:right;
+    letter-spacing:5px;
+}
+
+#menu1 li{
+    display:inline;
+}
+
+#search1 input[type="text"]{
+    padding: 5px 20px 20px 50px;
+	width: 100px;
+	height: 5px;
+	border: 2px solid #b7ecf3;
+    font-size:20px;
+    border-radius:20px 0 0 20px;
+    border-right:none;
+    background-color:#d1f9fc8e;
+    outline:none;
+}
+
+
+#menu2{
+    border-top:1px solid #fff;
+    margin-top:-70px;
+    background:#18c2ab;
+    border-bottom:1px solid #fff;
+    padding:30px 30px;
+    height:30px;
+}
+
+#menu2 a{
+    text-decoration:none;
+    color:#fff;
+    margin-top:20px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#menu2 li{
+    border-left:#000000;
+    display:inline;
+    padding:20px 20px;
+}
+
+#join1{
+    margin:auto;
+    width:800px;
+}
+
+.join1-1{
+    top:500px;
+    margin-top:200px;
+    background:#fff;
+    border:3px solid #0be076;
+    padding:30px;
+    margin-bottom:300px;
+}
+
+.join_form li{
+    list-style:none;
+}
+
+label{
+    color:#18c2ab;
+    font-size:22px;
+}
+
+.buttons button{
+   color:#cfe3da;
+   background:#43d7c3;
+   outline:none;
+   border:none;
+   padding:7px 7px;
+   margin-top:12px;
+}
+
+.buttons li{
+    list-style:none;
+    display:inline;
+}
+
+.col3 button{
+    color:#dcecea;
+    background:#df2a12;
+    outline:none;
+    border:none;
+    padding:7px 7px;
+    margin-top:12px;
+}
+
+#inputbox{
+    border:none;
+    border-bottom:3px solid #41dddd;
+    outline:none;
+    color:#41dddd;
+    font-size:18px;
+}
+
+
+#footer{
+    background:rgb(247, 231, 231);
+    float:center;
+    padding:30px 30px;
+    text-align:center;
+}
+
+#footer p{
+    margin-top:5px;
+    color:#814646;
+}
+
+
+</style>
+</head>
+<html>
+<body>
+    
+<div id="header">
+<div id="menu1">
+<ul>
+<li><a href="index13.html">로그인</a></li>
+<li><a href="index11.html">회원가입</a></li>
+<li><a href="#">공지사항</a></li>
+<li><a href="#">마이페이지</a></li>
+<li><a href="#">장바구니</a></li>
+</ul>
+</div>
+<div class="logo">
+<a href="index10.html"><img src="image/logo.png"></a>
+</div>
+<div id="menu2">
+<ul class="tap1">
+    <li class="onepice"><a href="#">원피스</a></li>
+    <li><a href="#">아우터</a></li>
+    <li><a href="#">스커트</a></li>
+    <li><a href="#">팬츠</a></li>
+    <li><a href="#">언더웨어</a></li>
+    <li><a href="#">전체화면</a></li>
+</ul>
+</div>
+</div>
+
+<div id="join1">
+    <div class="join1-1">
+    <form name="join1" action="insert1.php" method="post">
+    	<ul class="join_form">
+            <li>
+                <label class="label">아이디</span>
+                <span class="col2"><input type="text" name="id" id="inputbox"></span>
+                <span class="col3"><button type="button" onclick="check_id()">중복체크</button></span>                    
+            </li>
+            <li>
+                <label class="label">비밀번호</span>
+                <span class="col2"><input type="password" name="pass" id="inputbox"></span>               
+            </li>
+            <li>
+                <label class="label">비밀번호 확인</span>
+                <span class="col2"><input type="password" name="pass_confirm" id="inputbox"></span>               
+            </li>            
+            <li>
+                <label class="label">이름</span>
+                <span class="col2"><input type="text" name="name" id="inputbox"></span>               
+            </li>
+            <li>
+                <label class="label">이메일</span>
+                <span class="col2"><input type="text" name="email" id="inputbox"></span>               
+            </li>                        
+        </ul>                       
+		<ul class="buttons">
+	        <li><button type="button" onclick="check_input()"><a>저장하기</a></button></li>
+            <li><button type="button" onclick="reset_form()"><a>취소하기</a></button></li>
+        </ul>
+    </form>
+</div>
+</div>
+</body>
+</html>
+</div>
+</div>
+<div id="footer">
+<p>(주)옷과 여자
+<p>대표:엄혜빈 주소:서울시 관악구 신림동</p>
+<p>쇼핑몰/브랜드 제휴 문의:shop@clothes and woman</p>
+<p>고객문의:shop@clothes and woman/(09:00~18:00) 전화번호:010-0000-0000</p>
+<p>사업자 등록번호:000-00-0000 통신판매업 신고번호:0000-0000-00000</p>
+</div>
+</div>
+</div>
+</body>
+</html>
