@@ -36,9 +36,8 @@
         background:linear-gradient(#df8282,#fcc033);
         height:80px;
         width:auto;
-        
     }
-
+    
     #menu1 li{
         display:inline;
         list-style:none;
@@ -390,6 +389,7 @@
     #list1 > li{
       float:none;
       display:inline;
+      width:0;
     }  
 
     .list1-1{
@@ -523,7 +523,181 @@
       font-weight:bold;
     }
 
-    @media(max-width:768px) {
+    #list2{
+      position:relative;
+      width:1300px;
+      margin:auto;
+      list-style:none;
+    }
+
+    #list2 .image1 p{
+      position:absolute;
+      top:0;
+      left:0;
+      margin-top:50%;
+      margin-left:-80px;
+      text-align:center;
+      align-items:center;
+      transform-origin:center;
+      color:#dee996;
+      font-size:25px;
+      font-weight:bold;
+    }
+    
+    #list2 .image1 img{
+      position:absolute;
+      top:0;
+      left:0;
+      margin-top:400px;
+      margin-left:-100px;
+      width:600px;
+      height:600px;
+      background:#919090;
+    }
+
+
+    #list2 .image1 img:hover ~ p{
+      box-shadow:5px 5px 5px 5px rgb(44, 43, 43);
+      background:rgb(135, 135, 135);
+      opacity:0.9;
+    }
+
+    #list2 .image1 img:hover ~ .tag1{
+      box-shadow:5px 5px 5px 5px rgb(44, 43, 43);
+      background:rgb(135, 135, 135);
+      opacity:0.9;
+    }
+    
+    #list2 .image2-1 img{
+      position:absolute;
+      top:0;
+      left:0;
+      margin-top:400px;
+      margin-left:600px;
+      width:250px;
+      height:250px;
+    }
+
+    #list2 .image2-2 img{
+      position:absolute;
+      top:0;
+      left:0;
+      margin-top:400px;
+      margin-left:900px;
+      width:250px;
+      height:250px;
+    }
+
+    #list2 .image3-1 img{
+      position:absolute;
+      top:0;
+      left:0;
+      margin-top:700px;
+      margin-left:600px;
+      width:250px;
+      height:250px;
+    }
+
+    #list2 .image3-2 img{
+      position:absolute;
+      top:0;
+      left:0;
+      margin-top:700px;
+      margin-left:900px;
+      width:250px;
+      height:250px;
+    }
+
+    #footer{
+      background:#e79191;
+      width:100%;
+      height:500px;
+      margin-top:1200px;
+     }
+
+     .footer-inner{
+      position:relative;
+      top:0;
+      left:0;
+      background:#e79191;
+      width:1300px;
+      margin:auto;
+      }
+
+     .footer-inner .title1{
+      position:absolute;
+      top:0;
+      left:0;
+      color:#dee996;
+      font-weight:bold;
+     }
+
+     .footer-inner .title2{
+      position:absolute;
+      top:0;
+      left:0;
+      margin-left:300px;
+      margin-top:20px;
+      color:#dee996;
+      font-weight:bold;
+     }
+
+     .footer-inner .title3{
+      position:absolute;
+      top:0;
+      left:0;
+      margin-left:800px;
+      margin-top:20px;
+      color:#dee996;
+      font-weight:bold;
+     }
+
+     .footer-inner .submenu3{
+      position:absolute;
+      top:0;
+      left:0;
+      margin-top:30px;
+     }
+
+     .footer-inner .submenu4{
+      position:absolute;
+      top:0;
+      left:0;
+      margin-top:30px;
+      margin-left:300px;
+     }
+
+     .footer-inner .submenu5-1{
+      position:absolute;
+      top:0;
+      left:0;
+      margin-top:50px;
+      margin-left:800px;
+     }
+
+     .footer-inner .submenu5-2{
+      position:absolute;
+      top:0;
+      left:0;
+      margin-top:50px;
+      margin-left:850px;
+      }
+
+      .footer-inner .submenu5-3{
+      position:absolute;
+      top:0;
+      left:0;
+      margin-top:50px;
+      margin-left:900px;
+      }
+      
+      @media(max-width:768px) {
+      #menu1{
+        background:linear-gradient(#df8282,#fcc033);
+        height:80px;
+        width:100%;
+      }
+
       .myslider{
         margin:0;
         padding:5px 5px;
@@ -601,6 +775,7 @@
       #list1 > li{
       float:none;
       display:block;
+      width:100%;
       }
 
       #list1 img{
@@ -611,7 +786,7 @@
 
       .box1{
       position:absolute;
-      width:720px;
+      width:800px;
       height:500px;
       margin-top:-800px;
       background-color:#210404;
@@ -624,7 +799,7 @@
 
       .box2{
       position:absolute;
-      width:720px;
+      width:800px;
       height:400px;
       margin-top:-800px;
       margin-left:-2px;
@@ -664,7 +839,145 @@
       padding-top:400px;
     }
 
+    #list2{
+      position:relative;
+      width:1300px;
+      margin:auto;
+      list-style:none;
+    }
 
+    #list2 .image1 p{
+      position:absolute;
+      top:0;
+      left:0;
+      margin-top:3400px;
+      margin-left:10%;
+      text-align:center;
+      align-items:center;
+      transform-origin:center;
+      color:#dee996;
+      font-size:20px;
+      font-weight:bold;
+    }
+
+    #list2 .image1 img{
+      position:absolute;
+      top:0;
+      left:0;
+      margin-top:3100px;
+      margin-left:-100px;
+      width:80%;
+      height:600px;
+      background:#919090;
+    }
+
+    #list2 .image2-1 img{
+      position:absolute;
+      top:0;
+      left:0;
+      margin-top:3800px;
+      margin-left:20px;
+      width:200px;
+      height:200px;
+    }
+
+    #list2 .image2-2 img{
+      position:absolute;
+      top:0;
+      left:0;
+      margin-top:3800px;
+      margin-left:240px;
+      width:200px;
+      height:200px;
+    }
+
+    #list2 .image3-1 img{
+      position:absolute;
+      top:0;
+      left:0;
+      margin-top:3800px;
+      margin-left:460px;
+      width:200px;
+      height:200px;
+    }
+
+    #list2 .image3-2 img{
+      position:absolute;
+      top:0;
+      left:0;
+      margin-top:4100px;
+      margin-left:20px;
+      width:200px;
+      height:200px;
+    }
+
+    #footer{
+      background:#e79191;
+      width:100%;
+      height:500px;
+      margin-top:4500px;
+     }
+
+     .footer-inner{
+      position:relative;
+      top:0;
+      left:0;
+      background:#e79191;
+      width:100%;
+      margin:auto;
+     }
+
+     .footer-inner .title2{
+      position:absolute;
+      top:0;
+      left:0;
+      margin-left:250px;
+      margin-top:20px;
+      color:#dee996;
+      font-weight:bold;
+     }
+
+     .footer-inner .submenu4{
+      position:absolute;
+      top:0;
+      left:0;
+      margin-top:30px;
+      margin-left:250px;
+     }
+
+     .footer-inner .title3{
+      position:absolute;
+      top:0;
+      left:0;
+      margin-left:0px;
+      margin-top:260px;
+      color:#dee996;
+      font-weight:bold;
+     }
+
+     .footer-inner .submenu5-1{
+      position:absolute;
+      top:0;
+      left:0;
+      margin-top:300px;
+      margin-left:0px;
+     }
+
+     .footer-inner .submenu5-2{
+      position:absolute;
+      top:0;
+      left:0;
+      margin-top:300px;
+      margin-left:30px;
+      }
+
+      .footer-inner .submenu5-3{
+      position:absolute;
+      top:0;
+      left:0;
+      margin-top:300px;
+      margin-left:60px;
+      }
 }
 </style>
 </head>
@@ -734,7 +1047,47 @@
    </li>  
 </div>
 
+<div id="list2">
+  <li class="image1"><img src="image/bowl-1844894_1920.jpg"><p class="tag1">저희 빵집만이 고수하는 과일패키지를<br/>1+1으로 드리는 서비스!지금 바로 클릭해주세요!</p></li>
+  <li class="image2">
+  <div class="image2-1"><img src="image/cake-1971552_1920.jpg"></div>
+  <div class="image2-2"><img src="image/cake-4598932_1920.jpg"></div>
+  </li>
+  <li class="image3">
+    <div class="image3-1"><img src="image/sweetness-122450.jpg"></div>
+    <div class="image3-2"><img src="image/cupcakes-1283821_1920.jpg"></div>
+  </li>
 
+</div>
+
+<div id="footer">
+<div class="footer-inner">
+  <p class="title1">Info</p>
+  <div class="submenu3">
+  <p>브랜드소개</p>
+  <p>창업안내</p>
+  <p>안전보건경영방침</p>
+  <p>윤리신고센터</p>
+  <p>채용</p>
+  </div>
+
+  <p class="title2">Contact Us</p>
+  <div class="submenu4">
+  <p>고객센터</p>
+  <p>080-731-2027</p>
+  <p>평일 09:00 ~ 17:00(점심:12:00 ~ 13:00)</p>
+  <p>고객칭찬</p>
+  </div>
+  
+  
+  <p class="title3">Follow Us</p>
+  <div class="submenu5">
+  <p class="submenu5-1"><img src="image/free-icon-facebook-1077041.png"></p>
+  <p class="submenu5-2"><img src="image/free-icon-instagram-174855.png"></p>
+  <p class="submenu5-3"><img src="image/free-icon-youtube-174883.png"></p>
+  </div>
+</div>
+</div>
 
 <script>
 $('.myslider').slick({
